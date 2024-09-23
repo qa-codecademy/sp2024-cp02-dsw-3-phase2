@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ArtShop.DTO\ArtShop.DTO.csproj" />
+    <ProjectReference Include="..\ArtShop.Entities\ArtShop.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

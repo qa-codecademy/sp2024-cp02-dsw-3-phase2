@@ -1,4 +1,4 @@
-@ArtShop.Api_HostAddress = http://localhost:5083
+@ArtShop.Api_HostAddress = http://localhost:5095
 
 GET {{ArtShop.Api_HostAddress}}/weatherforecast/
 Accept: application/json

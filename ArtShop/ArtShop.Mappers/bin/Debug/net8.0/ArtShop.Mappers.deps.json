@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ArtShop.Mappers/1.0.0": {
+        "dependencies": {
+          "ArtShop.DTO": "1.0.0",
+          "ArtShop.Entities": "1.0.0"
+        },
+        "runtime": {
+          "ArtShop.Mappers.dll": {}
+        }
+      },
+      "ArtShop.DTO/1.0.0": {
+        "dependencies": {
+          "ArtShop.Entities": "1.0.0"
+        },
+        "runtime": {
+          "ArtShop.DTO.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ArtShop.Entities/1.0.0": {
+        "runtime": {
+          "ArtShop.Entities.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ArtShop.Mappers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ArtShop.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ArtShop.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

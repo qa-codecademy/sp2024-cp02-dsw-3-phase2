@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("df4379be-3950-45cd-a0f1-1be7b83b342d")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArtShop.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4643fda9250fb709083302a19bdf8d97ce920d50")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f054dd6425f77ce362b97c0bf3d3787825d5584b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArtShop.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArtShop.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
