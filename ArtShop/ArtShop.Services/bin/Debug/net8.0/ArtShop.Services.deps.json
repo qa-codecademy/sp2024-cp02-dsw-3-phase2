@@ -588,10 +588,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
         },
         "runtime": {
-          "ArtShop.DataAcces.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ArtShop.DataAcces.dll": {}
         }
       },
       "ArtShop.DTO/1.0.0": {
@@ -599,18 +596,12 @@
           "ArtShop.Entities": "1.0.0"
         },
         "runtime": {
-          "ArtShop.DTO.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ArtShop.DTO.dll": {}
         }
       },
       "ArtShop.Entities/1.0.0": {
         "runtime": {
-          "ArtShop.Entities.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ArtShop.Entities.dll": {}
         }
       },
       "ArtShop.Mappers/1.0.0": {
@@ -619,10 +610,7 @@
           "ArtShop.Entities": "1.0.0"
         },
         "runtime": {
-          "ArtShop.Mappers.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ArtShop.Mappers.dll": {}
         }
       }
     }

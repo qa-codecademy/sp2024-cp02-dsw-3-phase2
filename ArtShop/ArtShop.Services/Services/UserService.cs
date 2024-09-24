@@ -101,6 +101,60 @@ namespace ArtShop.Services.Services
             return ("User Added");
         }
 
+        public string Update(string userName,UpdateUserDto updateUser)
+        {
+            var user = _dbContext.Users.FirstOrDefault(x => x.UserName == userName);
+            if(user == null)
+            {
+                return "User does not Exist";
+            }
+
+            if (!string.IsNullOrEmpty(updateUser.Email))
+            {
+                user.Email = updateUser.Email;
+            }
+
+            if (!string.IsNullOrEmpty(updateUser.FirstName))
+            {
+                user.FirstName = updateUser.FirstName;
+            }
+
+            if (!string.IsNullOrEmpty(updateUser.LastName))
+            {
+                user.LastName = updateUser.LastName;
+            }
+
+            if (!string.IsNullOrEmpty(updateUser.UserName))
+            {
+                var existingUser = _dbContext.Users.FirstOrDefault(x => x.UserName == updateUser.UserName);
+                if (existingUser != null)
+                {
+                    return $"Username {updateUser.UserName} is already taken";
+                }
+
+                user.UserName = updateUser.UserName;
+            }
+
+            if (!string.IsNullOrEmpty(updateUser.Password))
+            {
+                if (updateUser.Password.Length < 8)
+                {
+                    return "Password needs to be at least 8 characters long";
+                }
+
+                MD5CryptoServiceProvider md5CryptoService = new();
+
+                byte[] password = Encoding.ASCII.GetBytes(updateUser.Password);
+                byte[] hashedPassword = md5CryptoService.ComputeHash(password);
+                user.Password = BitConverter.ToString(hashedPassword).Replace("-", "").ToLower();
+            }
+
+            _dbContext.SaveChanges();
+
+            return "User updated successfully";
+        }
+
+
         private ValidationObject ValidateRegister(RegisterUserDto userDto)
         {
             if (

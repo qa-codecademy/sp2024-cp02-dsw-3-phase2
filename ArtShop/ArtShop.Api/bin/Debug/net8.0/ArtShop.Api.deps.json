@@ -876,6 +876,12 @@
       "System.Text.Json/8.0.4": {
         "dependencies": {
           "System.Text.Encodings.Web": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31311"
+          }
         }
       },
       "System.Threading.Channels/6.0.0": {},
@@ -916,10 +922,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
         },
         "runtime": {
-          "ArtShop.DataAcces.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ArtShop.DataAcces.dll": {}
         }
       },
       "ArtShop.DTO/1.0.0": {
@@ -927,18 +930,12 @@
           "ArtShop.Entities": "1.0.0"
         },
         "runtime": {
-          "ArtShop.DTO.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ArtShop.DTO.dll": {}
         }
       },
       "ArtShop.Entities/1.0.0": {
         "runtime": {
-          "ArtShop.Entities.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ArtShop.Entities.dll": {}
         }
       },
       "ArtShop.Mappers/1.0.0": {
@@ -947,10 +944,7 @@
           "ArtShop.Entities": "1.0.0"
         },
         "runtime": {
-          "ArtShop.Mappers.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ArtShop.Mappers.dll": {}
         }
       },
       "ArtShop.Services/1.0.0": {
@@ -962,10 +956,7 @@
           "XAct.Core.PCL": "0.0.5014"
         },
         "runtime": {
-          "ArtShop.Services.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ArtShop.Services.dll": {}
         }
       }
     }

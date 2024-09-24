@@ -1,8 +1,11 @@
-﻿using ArtShop.DTO.UserDTOs;
+﻿using ArtShop.DataAcces;
+using ArtShop.DTO.UserDTOs;
 using ArtShop.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Logging;
 
 namespace ArtShop.Api.Controllers
 {
@@ -29,6 +32,13 @@ namespace ArtShop.Api.Controllers
         {
             var token = _userService.Login(user);
             return Ok(token);
+        }
+
+        [HttpPut("{userName}")]
+        [AllowAnonymous]
+        public IActionResult Update(string userName,UpdateUserDto userDto)
+        {
+                return Ok(_userService.Update(userName,userDto));
         }
     }
 }
