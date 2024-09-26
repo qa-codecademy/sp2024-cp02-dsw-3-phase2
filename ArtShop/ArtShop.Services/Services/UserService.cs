@@ -24,9 +24,13 @@ namespace ArtShop.Services.Services
         }
         public string Login(LoginUserDto loginUser)
         {
-            if (string.IsNullOrEmpty(loginUser.UserName) || string.IsNullOrEmpty(loginUser.Password))
+            if (string.IsNullOrEmpty(loginUser.UserName) && string .IsNullOrEmpty(loginUser.Email))
             {
-                return "UserName and Password are required fields";
+                return "UserName is required field";
+            }
+            if (string.IsNullOrEmpty(loginUser.Password))
+            {
+                return "Password is required field";
             }
 
             MD5CryptoServiceProvider md5CryptoService = new();
@@ -37,8 +41,8 @@ namespace ArtShop.Services.Services
 
             string passwordDb = BitConverter.ToString(hashedPassword).Replace("-", "").ToLower();
 
-            var user = _dbContext.Users.FirstOrDefault(x => (x.UserName == loginUser.UserName
-                                                               || x.Email == loginUser.UserName)
+            var user = _dbContext.Users.FirstOrDefault(x => (x.UserName == loginUser.UserName 
+                                                               || x.Email == loginUser.Email)
                                                                && x.Password == passwordDb
                                                                );
             if (user == null)
@@ -61,7 +65,7 @@ namespace ArtShop.Services.Services
                 (
                     new[]
                     {
-                        new Claim(ClaimTypes.Email,loginUser.UserName),
+                        new Claim(ClaimTypes.UserData,loginUser.UserName),
                         new Claim("userNameFullName", $"{user.FirstName} {user.LastName}")
                     }
                 )
@@ -126,12 +130,6 @@ namespace ArtShop.Services.Services
 
             if (!string.IsNullOrEmpty(updateUser.UserName))
             {
-                var existingUser = _dbContext.Users.FirstOrDefault(x => x.UserName == updateUser.UserName);
-                if (existingUser != null)
-                {
-                    return $"Username {updateUser.UserName} is already taken";
-                }
-
                 user.UserName = updateUser.UserName;
             }
 
@@ -159,13 +157,14 @@ namespace ArtShop.Services.Services
         {
             if (
                   (string.IsNullOrEmpty(userDto.Email) || string.IsNullOrEmpty(userDto.UserName))
-                  || string.IsNullOrEmpty(userDto.Password) || string.IsNullOrEmpty(userDto.CardNo)
+                  || (string.IsNullOrEmpty(userDto.Password) || string.IsNullOrEmpty(userDto.CardNo))
+                  || (string.IsNullOrEmpty(userDto.ExpireDate))
                 )
             {
                 return new ValidationObject()
                 {
                     IsValid = false,
-                    ValidationMessage = "Email,UserName and Password are required fields"
+                    ValidationMessage = "Email,UserName, Password,CardNumber and ExpireDate are required fields"
                 };
             }
             if (userDto.Email.Length > 150 ||
@@ -173,13 +172,13 @@ namespace ArtShop.Services.Services
                 userDto.LastName.Length > 150 ||
                 userDto.UserName.Length > 50 ||
                 userDto.Password.Length > 50||
-                userDto.CardNo.Length > 12
+                userDto.CardNo.Length > 16
                 )
             {
                 return new ValidationObject()
                 {
                     IsValid = false,
-                    ValidationMessage = "Maximum lenght for Email/FirstName/LastName is 150 characters"
+                    ValidationMessage = "Maximum lenght for Email/FirstName/LastName and CardNumber is 150 characters"
                 };
             }
             if (userDto.Password.Length < 8)

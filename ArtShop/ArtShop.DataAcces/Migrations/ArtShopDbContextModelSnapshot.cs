@@ -38,18 +38,20 @@ namespace ArtShop.DataAcces.Migrations
 
                     b.Property<string>("CreatedAt")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<Guid?>("SoldByUserId")
                         .HasColumnType("uniqueidentifier");
@@ -61,6 +63,10 @@ namespace ArtShop.DataAcces.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BoughtByUserId");
+
+                    b.HasIndex("SoldByUserId");
 
                     b.HasIndex("UserId");
 
@@ -118,10 +124,20 @@ namespace ArtShop.DataAcces.Migrations
 
             modelBuilder.Entity("ArtShop.Entities.Entities.ArtImage", b =>
                 {
+                    b.HasOne("ArtShop.Entities.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("BoughtByUserId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("ArtShop.Entities.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("SoldByUserId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.HasOne("ArtShop.Entities.Entities.User", "User")
                         .WithMany("Images")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("User");

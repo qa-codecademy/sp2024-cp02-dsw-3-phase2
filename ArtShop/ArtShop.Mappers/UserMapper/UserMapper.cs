@@ -22,17 +22,17 @@ namespace ArtShop.Mappers.UserMapper
                 ExpireDate = registerUserDto.ExpireDate
             };
         }
-        public static User ToUserUpdate(this UpdateUserDto updateUserDto)
-        {
-            return new User()
-            {
-                FirstName = updateUserDto.FirstName,
-                LastName = updateUserDto.LastName,
-                Email = updateUserDto.Email,
-                UserName = updateUserDto.UserName,
-                CardNo = updateUserDto.CardNo,
-                ExpireDate = updateUserDto.ExpireDate
-            };
-        }
+        //public static User ToUserUpdate(this UpdateUserDto updateUserDto)
+        //{
+        //    return new User()
+        //    {
+        //        FirstName = updateUserDto.FirstName,
+        //        LastName = updateUserDto.LastName,
+        //        Email = updateUserDto.Email,
+        //        UserName = updateUserDto.UserName,
+        //        CardNo = updateUserDto.CardNo,
+        //        ExpireDate = updateUserDto.ExpireDate
+        //    };
+        //}
     }
 }

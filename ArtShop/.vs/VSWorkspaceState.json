@@ -2,7 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\ArtShop.Api",
-    "\\ArtShop.Api\\Controllers"
+    "\\ArtShop.Api\\Controllers",
+    "\\ArtShop.DataAcces",
+    "\\ArtShop.DataAcces\\FluentConfig",
+    "\\ArtShop.Services",
+    "\\ArtShop.Services\\Services"
   ],
   "SelectedNode": "\\ArtShop.sln",
   "PreviewInSolutionExplorer": false

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ArtShop.Mappers
-build_property.ProjectDir = C:\Users\spase\Downloads\ArtShopBackEnd2\ArtShop\ArtShop.Mappers\
+build_property.ProjectDir = C:\Users\spase\source\repos\sp2024-cp02-dsw-3-phase2\ArtShop\ArtShop.Mappers\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

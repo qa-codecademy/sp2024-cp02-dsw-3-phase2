@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GxdfxttMGKk=",
+  "dgSpecHash": "iy0Xb6c0rMQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Mappers\\ArtShop.Mappers.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\spase\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
