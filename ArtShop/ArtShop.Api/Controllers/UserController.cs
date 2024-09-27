@@ -21,24 +21,67 @@ namespace ArtShop.Api.Controllers
 
         [HttpPost("register")]
         [AllowAnonymous]
-        public IActionResult Register(RegisterUserDto user)
+        //public IActionResult Register(RegisterUserDto user)
+        //{
+        //    return Ok(_userService.Register(user));
+        //}
+
+        public IActionResult Register([FromBody] RegisterUserDto registerUser)
         {
-            return Ok(_userService.Register(user));
+            var result = _userService.Register(registerUser); // Call the service
+
+            if (!result.Success)
+            {
+                return BadRequest(new { message = result.Message });
+            }
+
+            return Ok(new { message = result.Message });
         }
 
         [HttpPost("login")]
         [AllowAnonymous]
-        public IActionResult Login(LoginUserDto user)
+
+        //public IActionResult Login(LoginUserDto user)
+        //{
+        //    var token = _userService.Login(user);
+        //    return Ok(token);
+        //}
+
+        public IActionResult Login([FromBody] LoginUserDto loginUser)
         {
-            var token = _userService.Login(user);
-            return Ok(token);
+            var result = _userService.Login(loginUser);
+
+            if (!result.Success)
+            {
+                return BadRequest(new { message = result.Message });
+            }
+
+            return Ok(new
+            {
+                token = result.Token,
+                userFullName = result.UserFullName
+            });
         }
 
         [HttpPut("{userName}")]
         [AllowAnonymous]
-        public IActionResult Update(string userName,UpdateUserDto userDto)
+        public IActionResult Update(string userName, [FromBody] UpdateUserDto updateUser)
         {
-                return Ok(_userService.Update(userName,userDto));
+            var result = _userService.Update(userName, updateUser);
+
+            if (!result.Success)
+            {
+                return BadRequest(new { message = result.Message });
+            }
+
+            return Ok(new { message = result.Message });
         }
+
+
+
+        //public IActionResult Update(string userName,UpdateUserDto userDto)
+        //{
+        //        return Ok(_userService.Update(userName,userDto));
+        //}
     }
 }

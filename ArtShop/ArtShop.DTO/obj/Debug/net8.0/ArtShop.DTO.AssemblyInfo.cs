@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArtShop.DTO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fc0722b12c43d67a22fac4148a8afea1ac4c4be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfb75cf5fe296e04fec732f7037309df0c0833b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArtShop.DTO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArtShop.DTO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

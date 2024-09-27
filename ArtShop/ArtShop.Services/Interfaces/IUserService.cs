@@ -1,4 +1,5 @@
 ﻿using ArtShop.DTO.UserDTOs;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,8 @@ namespace ArtShop.Services.Interfaces
 {
     public interface IUserService
     {
-        public string Register(RegisterUserDto registerUser);
-        public string Login(LoginUserDto loginUser);
-        public string Update(string userName,UpdateUserDto updateUser);
+        public RegisterUserResultDto Register(RegisterUserDto registerUser);
+        public LoginUserResultDto Login(LoginUserDto loginUser);
+        public UpdateUserResultDto Update(string userName,UpdateUserDto updateUser);
     }
 }

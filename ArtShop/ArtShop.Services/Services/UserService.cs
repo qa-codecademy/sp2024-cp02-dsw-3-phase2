@@ -22,95 +22,245 @@ namespace ArtShop.Services.Services
         {
             _dbContext = dbContext;
         }
-        public string Login(LoginUserDto loginUser)
+        //public string Login(LoginUserDto loginUser)
+        //{
+        //    if (string.IsNullOrEmpty(loginUser.UserName) && string .IsNullOrEmpty(loginUser.Email))
+        //    {
+        //        return "UserName is required field";
+        //    }
+        //    if (string.IsNullOrEmpty(loginUser.Password))
+        //    {
+        //        return "Password is required field";
+        //    }
+
+        //    MD5CryptoServiceProvider md5CryptoService = new();
+
+        //    byte[] password = Encoding.ASCII.GetBytes(loginUser.Password);
+
+        //    byte[] hashedPassword = md5CryptoService.ComputeHash(password);
+
+        //    string passwordDb = BitConverter.ToString(hashedPassword).Replace("-", "").ToLower();
+
+        //    var user = _dbContext.Users.FirstOrDefault(x => (x.UserName == loginUser.UserName 
+        //                                                       || x.Email == loginUser.Email)
+        //                                                       && x.Password == passwordDb
+        //                                                       );
+        //    if (user == null)
+        //    {
+        //        return "User or Password is incorrect";
+        //    }
+
+        //    JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
+
+        //    byte[] secretKey = Encoding.ASCII.GetBytes("Our very secret key is at least 32 bytes long");
+
+        //    SecurityTokenDescriptor tokenDescriptor = new SecurityTokenDescriptor
+        //    {
+        //        Expires = DateTime.UtcNow.AddMinutes(15),
+
+        //        SigningCredentials = new SigningCredentials
+        //        (new SymmetricSecurityKey(secretKey), SecurityAlgorithms.HmacSha256Signature),
+
+        //        Subject = new System.Security.Claims.ClaimsIdentity
+        //        (
+        //            new[]
+        //            {
+        //                new Claim(ClaimTypes.UserData,loginUser.UserName),
+        //                new Claim("userNameFullName", $"{user.FirstName} {user.LastName}")
+        //            }
+        //        )
+        //    };
+
+        //    SecurityToken token = tokenHandler.CreateToken(tokenDescriptor);
+
+        //    return tokenHandler.WriteToken(token);
+
+        //}
+
+        public LoginUserResultDto Login(LoginUserDto loginUser)
         {
-            if (string.IsNullOrEmpty(loginUser.UserName) && string .IsNullOrEmpty(loginUser.Email))
+            if (string.IsNullOrEmpty(loginUser.UserName) && string.IsNullOrEmpty(loginUser.Email))
             {
-                return "UserName is required field";
+                return new LoginUserResultDto { Success = false, Message = "Username or Email is a required field" };
             }
+
             if (string.IsNullOrEmpty(loginUser.Password))
             {
-                return "Password is required field";
+                return new LoginUserResultDto { Success = false, Message = "Password is a required field" };
             }
 
-            MD5CryptoServiceProvider md5CryptoService = new();
-
-            byte[] password = Encoding.ASCII.GetBytes(loginUser.Password);
-
-            byte[] hashedPassword = md5CryptoService.ComputeHash(password);
-
-            string passwordDb = BitConverter.ToString(hashedPassword).Replace("-", "").ToLower();
-
-            var user = _dbContext.Users.FirstOrDefault(x => (x.UserName == loginUser.UserName 
-                                                               || x.Email == loginUser.Email)
-                                                               && x.Password == passwordDb
-                                                               );
-            if (user == null)
+            using (MD5CryptoServiceProvider md5CryptoService = new())
             {
-                return "User or Password is incorrect";
-            }
+                byte[] password = Encoding.ASCII.GetBytes(loginUser.Password);
+                byte[] hashedPassword = md5CryptoService.ComputeHash(password);
+                string passwordDb = BitConverter.ToString(hashedPassword).Replace("-", "").ToLower();
 
-            JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
+                var user = _dbContext.Users.FirstOrDefault(x =>
+                    (x.UserName == loginUser.UserName || x.Email == loginUser.Email) && x.Password == passwordDb);
 
-            byte[] secretKey = Encoding.ASCII.GetBytes("Our very secret key is at least 32 bytes long");
+                if (user == null)
+                {
+                    return new LoginUserResultDto { Success = false, Message = "Username or Password is incorrect" };
+                }
 
-            SecurityTokenDescriptor tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Expires = DateTime.UtcNow.AddMinutes(15),
+                JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
+                byte[] secretKey = Encoding.ASCII.GetBytes("Our very secret key is at least 32 bytes long");
 
-                SigningCredentials = new SigningCredentials
-                (new SymmetricSecurityKey(secretKey), SecurityAlgorithms.HmacSha256Signature),
-
-                Subject = new System.Security.Claims.ClaimsIdentity
-                (
-                    new[]
+                SecurityTokenDescriptor tokenDescriptor = new SecurityTokenDescriptor
+                {
+                    Expires = DateTime.UtcNow.AddMinutes(15),
+                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(secretKey), SecurityAlgorithms.HmacSha256Signature),
+                    Subject = new System.Security.Claims.ClaimsIdentity(new[]
                     {
-                        new Claim(ClaimTypes.UserData,loginUser.UserName),
-                        new Claim("userNameFullName", $"{user.FirstName} {user.LastName}")
-                    }
-                )
-            };
+                new Claim(ClaimTypes.UserData, loginUser.UserName),
+                new Claim("userNameFullName", $"{user.FirstName} {user.LastName}")
+            })
+                };
 
-            SecurityToken token = tokenHandler.CreateToken(tokenDescriptor);
+                SecurityToken token = tokenHandler.CreateToken(tokenDescriptor);
+                string tokenString = tokenHandler.WriteToken(token);
 
-            return tokenHandler.WriteToken(token);
-
+                return new LoginUserResultDto
+                {
+                    Success = true,
+                    Token = tokenString,
+                    UserFullName = $"{user.FirstName} {user.LastName}"
+                };
+            }
         }
 
-        public string Register(RegisterUserDto registerUser)
+
+        //public string Register(RegisterUserDto registerUser)
+        //{
+        //    var validObject = ValidateRegister(registerUser);
+
+        //    if (validObject.IsValid == false)
+        //    {
+        //        return validObject.ValidationMessage;
+        //    }
+
+        //    MD5CryptoServiceProvider md5CryptoService = new();
+
+        //    byte[] password = Encoding.ASCII.GetBytes(registerUser.Password);
+
+        //    byte[] hashedPassword = md5CryptoService.ComputeHash(password);
+
+        //    string passwordDb = BitConverter.ToString(hashedPassword).Replace("-", "").ToLower();
+
+        //    var user = registerUser.ToUser();
+
+        //    user.Password = passwordDb;
+
+        //    _dbContext.Users.Add(user);
+
+        //    _dbContext.SaveChanges();
+
+        //    return ("User Added");
+        //}
+
+
+        public RegisterUserResultDto Register(RegisterUserDto registerUser)
         {
             var validObject = ValidateRegister(registerUser);
 
-            if (validObject.IsValid == false)
+            if (!validObject.IsValid)
             {
-                return validObject.ValidationMessage;
+                return new RegisterUserResultDto
+                {
+                    Success = false,
+                    Message = validObject.ValidationMessage
+                };
             }
 
-            MD5CryptoServiceProvider md5CryptoService = new();
+            using (MD5CryptoServiceProvider md5CryptoService = new())
+            {
+                byte[] password = Encoding.ASCII.GetBytes(registerUser.Password);
+                byte[] hashedPassword = md5CryptoService.ComputeHash(password);
+                string passwordDb = BitConverter.ToString(hashedPassword).Replace("-", "").ToLower();
 
-            byte[] password = Encoding.ASCII.GetBytes(registerUser.Password);
+                var user = registerUser.ToUser();
+                user.Password = passwordDb;
 
-            byte[] hashedPassword = md5CryptoService.ComputeHash(password);
+                _dbContext.Users.Add(user);
+                _dbContext.SaveChanges();
+            }
 
-            string passwordDb = BitConverter.ToString(hashedPassword).Replace("-", "").ToLower();
-
-            var user = registerUser.ToUser();
-
-            user.Password = passwordDb;
-
-            _dbContext.Users.Add(user);
-
-            _dbContext.SaveChanges();
-
-            return ("User Added");
+            return new RegisterUserResultDto
+            {
+                Success = true,
+                Message = "User added successfully"
+            };
         }
 
-        public string Update(string userName,UpdateUserDto updateUser)
+
+        //public string Update(string userName,UpdateUserDto updateUser)
+        //{
+        //    var user = _dbContext.Users.FirstOrDefault(x => x.UserName == userName);
+        //    if(user == null)
+        //    {
+        //        return "User does not Exist";
+        //    }
+
+        //    if (!string.IsNullOrEmpty(updateUser.Email))
+        //    {
+        //        user.Email = updateUser.Email;
+        //    }
+
+        //    if (!string.IsNullOrEmpty(updateUser.FirstName))
+        //    {
+        //        user.FirstName = updateUser.FirstName;
+        //    }
+
+        //    if (!string.IsNullOrEmpty(updateUser.LastName))
+        //    {
+        //        user.LastName = updateUser.LastName;
+        //    }
+
+        //    if (!string.IsNullOrEmpty(updateUser.UserName))
+        //    {
+        //        user.UserName = updateUser.UserName;
+        //    }
+
+        //    if (!string.IsNullOrEmpty(updateUser.Password))
+        //    {
+        //        if (updateUser.Password.Length < 8)
+        //        {
+        //            return "Password needs to be at least 8 characters long";
+        //        }
+
+        //        MD5CryptoServiceProvider md5CryptoService = new();
+
+        //        byte[] password = Encoding.ASCII.GetBytes(updateUser.Password);
+        //        byte[] hashedPassword = md5CryptoService.ComputeHash(password);
+        //        user.Password = BitConverter.ToString(hashedPassword).Replace("-", "").ToLower();
+        //    }
+
+        //     if (!string.IsNullOrEmpty(updateUser.CardNo))
+        //     {
+        //         user.UserName = updateUser.CardNo;
+        //     }
+
+        //     if (!string.IsNullOrEmpty(updateUser.ExpireDate))
+        //     {
+        //         user.UserName = updateUser.ExpireDate;
+        //     }
+
+        //     _dbContext.SaveChanges();
+
+        //    return "User updated successfully";
+        //}
+
+        public UpdateUserResultDto Update(string userName, UpdateUserDto updateUser)
         {
             var user = _dbContext.Users.FirstOrDefault(x => x.UserName == userName);
-            if(user == null)
+
+            if (user == null)
             {
-                return "User does not Exist";
+                return new UpdateUserResultDto
+                {
+                    Success = false,
+                    Message = "User does not exist"
+                };
             }
 
             if (!string.IsNullOrEmpty(updateUser.Email))
@@ -137,20 +287,40 @@ namespace ArtShop.Services.Services
             {
                 if (updateUser.Password.Length < 8)
                 {
-                    return "Password needs to be at least 8 characters long";
+                    return new UpdateUserResultDto
+                    {
+                        Success = false,
+                        Message = "Password needs to be at least 8 characters long"
+                    };
                 }
 
-                MD5CryptoServiceProvider md5CryptoService = new();
+                using (MD5CryptoServiceProvider md5CryptoService = new())
+                {
+                    byte[] password = Encoding.ASCII.GetBytes(updateUser.Password);
+                    byte[] hashedPassword = md5CryptoService.ComputeHash(password);
+                    user.Password = BitConverter.ToString(hashedPassword).Replace("-", "").ToLower();
+                }
+            }
 
-                byte[] password = Encoding.ASCII.GetBytes(updateUser.Password);
-                byte[] hashedPassword = md5CryptoService.ComputeHash(password);
-                user.Password = BitConverter.ToString(hashedPassword).Replace("-", "").ToLower();
+            if (!string.IsNullOrEmpty(updateUser.CardNo))
+            {
+                user.CardNo = updateUser.CardNo;
+            }
+
+            if (!string.IsNullOrEmpty(updateUser.ExpireDate))
+            {
+                user.ExpireDate = updateUser.ExpireDate;
             }
 
             _dbContext.SaveChanges();
 
-            return "User updated successfully";
+            return new UpdateUserResultDto
+            {
+                Success = true,
+                Message = "User updated successfully"
+            };
         }
+
 
 
         private ValidationObject ValidateRegister(RegisterUserDto userDto)
@@ -171,7 +341,7 @@ namespace ArtShop.Services.Services
                 userDto.FirstName.Length > 150 ||
                 userDto.LastName.Length > 150 ||
                 userDto.UserName.Length > 50 ||
-                userDto.Password.Length > 50||
+                userDto.Password.Length > 8||
                 userDto.CardNo.Length > 16
                 )
             {

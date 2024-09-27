@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DB141D7F-E9C7-4274-9539-77A32B155FE1}|ArtShop.Api\\ArtShop.Api.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.api\\controllers\\imagecontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB141D7F-E9C7-4274-9539-77A32B155FE1}|ArtShop.Api\\ArtShop.Api.csproj|solutionrelative:artshop.api\\controllers\\imagecontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dataacces\\fluentconfig\\artimageflunetconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|solutionrelative:artshop.dataacces\\fluentconfig\\artimageflunetconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D0A60B3-E68F-4B5A-8ED6-2F3CBB2FBA23}|ArtShop.Services\\ArtShop.Services.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.services\\services\\artimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D0A60B3-E68F-4B5A-8ED6-2F3CBB2FBA23}|ArtShop.Services\\ArtShop.Services.csproj|solutionrelative:artshop.services\\services\\artimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D0A60B3-E68F-4B5A-8ED6-2F3CBB2FBA23}|ArtShop.Services\\ArtShop.Services.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D0A60B3-E68F-4B5A-8ED6-2F3CBB2FBA23}|ArtShop.Services\\ArtShop.Services.csproj|solutionrelative:artshop.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D0A60B3-E68F-4B5A-8ED6-2F3CBB2FBA23}|ArtShop.Services\\ArtShop.Services.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.services\\interfaces\\iartimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D0A60B3-E68F-4B5A-8ED6-2F3CBB2FBA23}|ArtShop.Services\\ArtShop.Services.csproj|solutionrelative:artshop.services\\interfaces\\iartimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Services\\ArtImageService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Services\\Services\\ArtImageService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\AppData\\Roaming\\Microsoft\\UserSecrets\\df4379be-3950-45cd-a0f1-1be7b83b342d\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
@@ -29,96 +13,124 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\toiis\\AppData\\Roaming\\Microsoft\\UserSecrets\\df4379be-3950-45cd-a0f1-1be7b83b342d\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D4C0FB2-44B8-4947-87D4-991A42381FD0}|ArtShop.Entities\\ArtShop.Entities.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.entities\\entities\\artimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D4C0FB2-44B8-4947-87D4-991A42381FD0}|ArtShop.Entities\\ArtShop.Entities.csproj|solutionrelative:artshop.entities\\entities\\artimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\UpdateUserResultDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DTO\\UserDTOs\\UpdateUserResultDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dataacces\\migrations\\20240926155326_initialcreateimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|solutionrelative:artshop.dataacces\\migrations\\20240926155326_initialcreateimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\RegisterUserResultDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DTO\\UserDTOs\\RegisterUserResultDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D585144E-B4C4-419F-8707-E0A4DFFA1CEB}|ArtShop.Mappers\\ArtShop.Mappers.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.mappers\\imagemapper\\imagemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D585144E-B4C4-419F-8707-E0A4DFFA1CEB}|ArtShop.Mappers\\ArtShop.Mappers.csproj|solutionrelative:artshop.mappers\\imagemapper\\imagemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\LoginUserResultDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DTO\\UserDTOs\\LoginUserResultDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dataacces\\migrations\\artshopdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|solutionrelative:artshop.dataacces\\migrations\\artshopdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Entities\\Entities\\ArtImage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Entities\\Entities\\ArtImage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dto\\artimagedtos\\addimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|solutionrelative:artshop.dto\\artimagedtos\\addimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Api\\Controllers\\ImageContoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Api\\Controllers\\ImageContoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dto\\userdtos\\registeruserresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|solutionrelative:artshop.dto\\userdtos\\registeruserresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DataAcces\\Migrations\\20240926155326_initialCreateImages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DataAcces\\Migrations\\20240926155326_initialCreateImages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dto\\artimagedtos\\displayimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|solutionrelative:artshop.dto\\artimagedtos\\displayimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Mappers\\ImageMapper\\ImageMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Mappers\\ImageMapper\\ImageMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dto\\userdtos\\displayuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|solutionrelative:artshop.dto\\userdtos\\displayuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DataAcces\\Migrations\\ArtShopDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DataAcces\\Migrations\\ArtShopDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D4C0FB2-44B8-4947-87D4-991A42381FD0}|ArtShop.Entities\\ArtShop.Entities.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.entities\\entities\\paginatedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D4C0FB2-44B8-4947-87D4-991A42381FD0}|ArtShop.Entities\\ArtShop.Entities.csproj|solutionrelative:artshop.entities\\entities\\paginatedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DataAcces\\FluentConfig\\ArtImageFlunetConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DataAcces\\FluentConfig\\ArtImageFlunetConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dataacces\\migrations\\20240925134707_seconddatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|solutionrelative:artshop.dataacces\\migrations\\20240925134707_seconddatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\ArtImageDTOs\\AddImageDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DTO\\ArtImageDTOs\\AddImageDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dto\\userdtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|solutionrelative:artshop.dto\\userdtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\RegisterUserResponseDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DTO\\UserDTOs\\RegisterUserResponseDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dataacces\\migrations\\20240923203742_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|solutionrelative:artshop.dataacces\\migrations\\20240923203742_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\ArtImageDTOs\\DisplayImage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DTO\\ArtImageDTOs\\DisplayImage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D4C0FB2-44B8-4947-87D4-991A42381FD0}|ArtShop.Entities\\ArtShop.Entities.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.entities\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D4C0FB2-44B8-4947-87D4-991A42381FD0}|ArtShop.Entities\\ArtShop.Entities.csproj|solutionrelative:artshop.entities\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\DisplayUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DTO\\UserDTOs\\DisplayUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dto\\userdtos\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|solutionrelative:artshop.dto\\userdtos\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Interfaces\\IArtImageService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Services\\Interfaces\\IArtImageService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dto\\userdtos\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{073877CD-DB74-4319-9AC4-E791C650456D}|ArtShop.DTO\\ArtShop.DTO.csproj|solutionrelative:artshop.dto\\userdtos\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Entities\\Entities\\PaginatedResult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Entities\\Entities\\PaginatedResult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB141D7F-E9C7-4274-9539-77A32B155FE1}|ArtShop.Api\\ArtShop.Api.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB141D7F-E9C7-4274-9539-77A32B155FE1}|ArtShop.Api\\ArtShop.Api.csproj|solutionrelative:artshop.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DataAcces\\Migrations\\20240925134707_secondDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DataAcces\\Migrations\\20240925134707_secondDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dataacces\\migrations\\20240922205736_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|solutionrelative:artshop.dataacces\\migrations\\20240922205736_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\UpdateUserDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DTO\\UserDTOs\\UpdateUserDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB141D7F-E9C7-4274-9539-77A32B155FE1}|ArtShop.Api\\ArtShop.Api.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DB141D7F-E9C7-4274-9539-77A32B155FE1}|ArtShop.Api\\ArtShop.Api.csproj|solutionrelative:artshop.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DataAcces\\Migrations\\20240923203742_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DataAcces\\Migrations\\20240923203742_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB141D7F-E9C7-4274-9539-77A32B155FE1}|ArtShop.Api\\ArtShop.Api.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB141D7F-E9C7-4274-9539-77A32B155FE1}|ArtShop.Api\\ArtShop.Api.csproj|solutionrelative:artshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Entities\\Entities\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Entities\\Entities\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.dataacces\\artshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03988CF2-7BD4-4A6C-9279-FA9E059C8126}|ArtShop.DataAcces\\ArtShop.DataAcces.csproj|solutionrelative:artshop.dataacces\\artshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\LoginUserDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DTO\\UserDTOs\\LoginUserDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D0A60B3-E68F-4B5A-8ED6-2F3CBB2FBA23}|ArtShop.Services\\ArtShop.Services.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D0A60B3-E68F-4B5A-8ED6-2F3CBB2FBA23}|ArtShop.Services\\ArtShop.Services.csproj|solutionrelative:artshop.services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\RegisterUserDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DTO\\UserDTOs\\RegisterUserDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D585144E-B4C4-419F-8707-E0A4DFFA1CEB}|ArtShop.Mappers\\ArtShop.Mappers.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.mappers\\usermapper\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D585144E-B4C4-419F-8707-E0A4DFFA1CEB}|ArtShop.Mappers\\ArtShop.Mappers.csproj|solutionrelative:artshop.mappers\\usermapper\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Api\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Api\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D4C0FB2-44B8-4947-87D4-991A42381FD0}|ArtShop.Entities\\ArtShop.Entities.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.entities\\enums\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D4C0FB2-44B8-4947-87D4-991A42381FD0}|ArtShop.Entities\\ArtShop.Entities.csproj|solutionrelative:artshop.entities\\enums\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DataAcces\\Migrations\\20240922205736_initialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DataAcces\\Migrations\\20240922205736_initialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Api\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Api\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Api\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Api\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DataAcces\\ArtShopDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.DataAcces\\ArtShopDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Services\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Services\\Services\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Interfaces\\IUserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Services\\Interfaces\\IUserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Mappers\\UserMapper\\UserMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Mappers\\UserMapper\\UserMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Entities\\Enums\\Category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtShop.Entities\\Enums\\Category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -128,7 +140,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 231,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -144,19 +156,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
+              "Title": "UpdateUserResultDto.cs",
+              "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\UpdateUserResultDto.cs",
+              "RelativeDocumentMoniker": "ArtShop.DTO\\UserDTOs\\UpdateUserResultDto.cs",
+              "ToolTip": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\UpdateUserResultDto.cs",
+              "RelativeToolTip": "ArtShop.DTO\\UserDTOs\\UpdateUserResultDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T16:50:45.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterUserResultDto.cs",
+              "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\RegisterUserResultDto.cs",
+              "RelativeDocumentMoniker": "ArtShop.DTO\\UserDTOs\\RegisterUserResultDto.cs",
+              "ToolTip": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\RegisterUserResultDto.cs",
+              "RelativeToolTip": "ArtShop.DTO\\UserDTOs\\RegisterUserResultDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T16:44:06.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginUserResultDto.cs",
+              "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\LoginUserResultDto.cs",
+              "RelativeDocumentMoniker": "ArtShop.DTO\\UserDTOs\\LoginUserResultDto.cs",
+              "ToolTip": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\LoginUserResultDto.cs",
+              "RelativeToolTip": "ArtShop.DTO\\UserDTOs\\LoginUserResultDto.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T16:32:50.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ArtImage.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Entities\\Entities\\ArtImage.cs",
               "RelativeDocumentMoniker": "ArtShop.Entities\\Entities\\ArtImage.cs",
               "ToolTip": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Entities\\Entities\\ArtImage.cs",
               "RelativeToolTip": "ArtShop.Entities\\Entities\\ArtImage.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAsAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBAAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T15:45:12.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "ImageContoller.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Api\\Controllers\\ImageContoller.cs",
               "RelativeDocumentMoniker": "ArtShop.Api\\Controllers\\ImageContoller.cs",
@@ -164,8 +212,7 @@
               "RelativeToolTip": "ArtShop.Api\\Controllers\\ImageContoller.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAqwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T16:04:51.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T16:04:51.255Z"
             },
             {
               "$type": "Document",
@@ -205,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "ArtImageFlunetConfig.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DataAcces\\FluentConfig\\ArtImageFlunetConfig.cs",
               "RelativeDocumentMoniker": "ArtShop.DataAcces\\FluentConfig\\ArtImageFlunetConfig.cs",
@@ -213,12 +260,11 @@
               "RelativeToolTip": "ArtShop.DataAcces\\FluentConfig\\ArtImageFlunetConfig.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAQwCQAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T14:44:54.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T14:44:54.088Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AddImageDto.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\ArtImageDTOs\\AddImageDto.cs",
               "RelativeDocumentMoniker": "ArtShop.DTO\\ArtImageDTOs\\AddImageDto.cs",
@@ -230,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "RegisterUserResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\RegisterUserResponseDto.cs",
               "RelativeDocumentMoniker": "ArtShop.DTO\\UserDTOs\\RegisterUserResponseDto.cs",
@@ -242,20 +288,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ArtImageService.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Services\\ArtImageService.cs",
               "RelativeDocumentMoniker": "ArtShop.Services\\Services\\ArtImageService.cs",
               "ToolTip": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Services\\ArtImageService.cs",
               "RelativeToolTip": "ArtShop.Services\\Services\\ArtImageService.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAqwBQAAAAwAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABQAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T14:37:58.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "DisplayImage.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\ArtImageDTOs\\DisplayImage.cs",
               "RelativeDocumentMoniker": "ArtShop.DTO\\ArtImageDTOs\\DisplayImage.cs",
@@ -267,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "DisplayUser.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\DisplayUser.cs",
               "RelativeDocumentMoniker": "ArtShop.DTO\\UserDTOs\\DisplayUser.cs",
@@ -279,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "IArtImageService.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Interfaces\\IArtImageService.cs",
               "RelativeDocumentMoniker": "ArtShop.Services\\Interfaces\\IArtImageService.cs",
@@ -287,12 +333,11 @@
               "RelativeToolTip": "ArtShop.Services\\Interfaces\\IArtImageService.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAqwBEAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:18:03.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T14:18:03.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "PaginatedResult.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Entities\\Entities\\PaginatedResult.cs",
               "RelativeDocumentMoniker": "ArtShop.Entities\\Entities\\PaginatedResult.cs",
@@ -304,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "20240925134707_secondDatabase.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DataAcces\\Migrations\\20240925134707_secondDatabase.cs",
               "RelativeDocumentMoniker": "ArtShop.DataAcces\\Migrations\\20240925134707_secondDatabase.cs",
@@ -316,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\spase\\AppData\\Roaming\\Microsoft\\UserSecrets\\df4379be-3950-45cd-a0f1-1be7b83b342d\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\df4379be-3950-45cd-a0f1-1be7b83b342d\\secrets.json",
@@ -328,19 +373,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "UpdateUserDto.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\UpdateUserDto.cs",
               "RelativeDocumentMoniker": "ArtShop.DTO\\UserDTOs\\UpdateUserDto.cs",
               "ToolTip": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\UpdateUserDto.cs",
               "RelativeToolTip": "ArtShop.DTO\\UserDTOs\\UpdateUserDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T14:00:12.395Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "20240923203742_test.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DataAcces\\Migrations\\20240923203742_test.cs",
               "RelativeDocumentMoniker": "ArtShop.DataAcces\\Migrations\\20240923203742_test.cs",
@@ -352,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\toiis\\AppData\\Roaming\\Microsoft\\UserSecrets\\df4379be-3950-45cd-a0f1-1be7b83b342d\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\toiis\\AppData\\Roaming\\Microsoft\\UserSecrets\\df4379be-3950-45cd-a0f1-1be7b83b342d\\secrets.json",
@@ -364,19 +409,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Entities\\Entities\\User.cs",
               "RelativeDocumentMoniker": "ArtShop.Entities\\Entities\\User.cs",
               "ToolTip": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Entities\\Entities\\User.cs",
               "RelativeToolTip": "ArtShop.Entities\\Entities\\User.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAgwBMAAABPAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABIAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T21:36:05.167Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "LoginUserDto.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\LoginUserDto.cs",
               "RelativeDocumentMoniker": "ArtShop.DTO\\UserDTOs\\LoginUserDto.cs",
@@ -388,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "RegisterUserDto.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\UserDTOs\\RegisterUserDto.cs",
               "RelativeDocumentMoniker": "ArtShop.DTO\\UserDTOs\\RegisterUserDto.cs",
@@ -400,19 +445,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "ArtShop.Api\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Api\\Controllers\\UserController.cs",
               "RelativeToolTip": "ArtShop.Api\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAqwB8AAAAJAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAABMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T21:02:01.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "20240922205736_initialCreate.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DataAcces\\Migrations\\20240922205736_initialCreate.cs",
               "RelativeDocumentMoniker": "ArtShop.DataAcces\\Migrations\\20240922205736_initialCreate.cs",
@@ -424,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ArtShop.Api\\appsettings.Development.json",
@@ -436,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Api\\Program.cs",
               "RelativeDocumentMoniker": "ArtShop.Api\\Program.cs",
@@ -448,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ArtShopDbContext.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DataAcces\\ArtShopDbContext.cs",
               "RelativeDocumentMoniker": "ArtShop.DataAcces\\ArtShopDbContext.cs",
@@ -460,32 +505,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 29,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "ArtShop.Services\\Services\\UserService.cs",
               "ToolTip": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Services\\UserService.cs",
               "RelativeToolTip": "ArtShop.Services\\Services\\UserService.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAqwCsAAABeAAAA",
+              "ViewState": "AQIAAFIBAAAAAAAAAAAAAFQBAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T20:02:42.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T20:02:42.244Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "ArtShop.Services\\Interfaces\\IUserService.cs",
               "ToolTip": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Interfaces\\IUserService.cs",
               "RelativeToolTip": "ArtShop.Services\\Interfaces\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T20:01:14.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "UserMapper.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Mappers\\UserMapper\\UserMapper.cs",
               "RelativeDocumentMoniker": "ArtShop.Mappers\\UserMapper\\UserMapper.cs",
@@ -497,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Entities\\Enums\\Category.cs",
               "RelativeDocumentMoniker": "ArtShop.Entities\\Enums\\Category.cs",
