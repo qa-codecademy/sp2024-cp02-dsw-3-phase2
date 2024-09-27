@@ -341,7 +341,6 @@ namespace ArtShop.Services.Services
                 userDto.FirstName.Length > 150 ||
                 userDto.LastName.Length > 150 ||
                 userDto.UserName.Length > 50 ||
-                userDto.Password.Length > 8||
                 userDto.CardNo.Length > 16
                 )
             {
