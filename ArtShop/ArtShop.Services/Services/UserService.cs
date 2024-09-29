@@ -79,9 +79,9 @@ namespace ArtShop.Services.Services
 
         public LoginUserResultDto Login(LoginUserDto loginUser)
         {
-            if (string.IsNullOrEmpty(loginUser.UserName) && string.IsNullOrEmpty(loginUser.Email))
+            if (string.IsNullOrEmpty(loginUser.UserName) /*&& string.IsNullOrEmpty(loginUser.Email)*/)
             {
-                return new LoginUserResultDto { Success = false, Message = "Username or Email is a required field" };
+                return new LoginUserResultDto { Success = false, Message = "Username is a required field" };
             }
 
             if (string.IsNullOrEmpty(loginUser.Password))
@@ -96,7 +96,7 @@ namespace ArtShop.Services.Services
                 string passwordDb = BitConverter.ToString(hashedPassword).Replace("-", "").ToLower();
 
                 var user = _dbContext.Users.FirstOrDefault(x =>
-                    (x.UserName == loginUser.UserName || x.Email == loginUser.Email) && x.Password == passwordDb);
+                    (x.UserName == loginUser.UserName/* || x.Email == loginUser.Email*/) && x.Password == passwordDb);
 
                 if (user == null)
                 {

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArtShop.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+078a31abd19edd41d2b3e543711903816e7e54f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3779f9a6b139816bd502103717420130c248675")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArtShop.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArtShop.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

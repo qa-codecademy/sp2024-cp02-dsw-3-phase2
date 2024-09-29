@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArtShop.DataAcces")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfb75cf5fe296e04fec732f7037309df0c0833b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3779f9a6b139816bd502103717420130c248675")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArtShop.DataAcces")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArtShop.DataAcces")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
