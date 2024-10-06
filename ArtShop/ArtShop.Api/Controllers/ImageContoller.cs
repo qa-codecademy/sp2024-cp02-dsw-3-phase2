@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using XAct.Messages;
 
 namespace ArtShop.Api.Controllers
 {
@@ -20,7 +21,7 @@ namespace ArtShop.Api.Controllers
             _artImageService = artImageService;
         }
 
-        [HttpPost]
+        [HttpPost("addImage")]
         public IActionResult AddImage([FromBody] AddImageDto addImageDto)
         {
             try
@@ -56,14 +57,18 @@ namespace ArtShop.Api.Controllers
             }
         }
 
-        [HttpDelete("delete/{id}")]
-        [AllowAnonymous]
-        public IActionResult DeleteImage(Guid id)
+        [HttpDelete("delete{id}")]
+        public IActionResult DeleteImage(string id)
         {
             try
             {
-                var result = _artImageService.DeleteImage(id);
-                return Ok(new { result });
+                if(!Guid.TryParse(id,out Guid imageId))
+                {
+                    throw new Exception("Id canot be parsed");
+                }
+                var imageDelete = _artImageService.DeleteImage(imageId);
+
+                return Ok(new {imageDelete.Message});
             }
             catch (Exception ex)
             {
@@ -71,7 +76,7 @@ namespace ArtShop.Api.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("GetImages")]
         public IActionResult GetArtImages([FromQuery] int pageNumber = 1, [FromQuery] Category? category = null, [FromQuery] bool? inStock = null)
         {
             try
@@ -86,12 +91,16 @@ namespace ArtShop.Api.Controllers
 
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("GetById{id}")]
         public IActionResult GetImageById(Guid id)
         {
             try
             {
                 var image = _artImageService.GetImageById(id);
+                if(image == null)
+                {
+                    return NotFound(new { Message = "There is no such image" });
+                }
                 return Ok(new { image });
             }
             catch (Exception ex)

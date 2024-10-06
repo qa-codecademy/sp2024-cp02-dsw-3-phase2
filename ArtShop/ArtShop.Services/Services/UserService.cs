@@ -109,9 +109,9 @@ namespace ArtShop.Services.Services
             };
         }
 
-        public UpdateUserResultDto Update(string userName, UpdateUserDto updateUser)
+        public UpdateUserResultDto Update(Guid id, UpdateUserDto updateUser)
         {
-            var user = _dbContext.Users.FirstOrDefault(x => x.UserName == userName);
+            var user = _dbContext.Users.FirstOrDefault(x => x.Id == id);
 
             if (user == null)
             {

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Logging;
 using System.Security.Claims;
+using XAct;
 
 namespace ArtShop.Api.Controllers
 {
@@ -25,69 +26,109 @@ namespace ArtShop.Api.Controllers
         [AllowAnonymous]
         public IActionResult Register([FromBody] RegisterUserDto registerUser)
         {
-            var result = _userService.Register(registerUser);
-
-            if (!result.Success)
+            try
             {
-                return BadRequest(new { message = result.Message });
-            }
+                var result = _userService.Register(registerUser);
 
-            return Ok(new { message = result.Message });
+                if (!result.Success)
+                {
+                    return BadRequest(new { message = result.Message });
+                }
+
+                return Ok(new { message = result.Message });
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpPost("login")]
         [AllowAnonymous]
         public IActionResult Login([FromBody] LoginUserDto loginUser)
         {
-            var result = _userService.Login(loginUser);
-
-            if (!result.Success)
+            try
             {
-                return BadRequest(new { message = result.Message });
+                var result = _userService.Login(loginUser);
+
+                if (!result.Success)
+                {
+                    return BadRequest(new { message = result.Message });
+                }
+
+                return Ok(new
+                {
+                    token = result.Token,
+                    userFullName = result.UserFullName
+                });
             }
-
-            return Ok(new
+            catch(Exception ex)
             {
-                token = result.Token,
-                userFullName = result.UserFullName
-            });
+                return BadRequest(ex.Message);
+            }
         }
 
-        [HttpPut("{userName}")]
-        public IActionResult Update(string userName, [FromBody] UpdateUserDto updateUser)
+        [HttpPut("update")]
+        public IActionResult Update([FromBody] UpdateUserDto updateUser)
         {
-            var result = _userService.Update(userName, updateUser);
-
-            if (!result.Success)
+            try
             {
-                return BadRequest(new { message = result.Message });
-            }
+                var id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            return Ok(new { message = result.Message });
+                if (id == null)
+                {
+                    return Unauthorized("User is not logged in.");
+                }
+
+                if (!Guid.TryParse(id, out Guid userId))
+                {
+                    return BadRequest("Invalid user ID format.");
+                }
+
+                var result = _userService.Update(userId, updateUser);
+
+                if (!result.Success)
+                {
+                    return BadRequest(new { message = result.Message });
+                }
+
+                return Ok(new { message = result.Message });
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         [HttpGet("userInfo")]
         public IActionResult UserInfo()
         {
-            var userIdString = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-
-            if (userIdString == null)
+            try
             {
-                return Unauthorized("User is not logged in.");
-            }
+                var userIdString = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            if (!Guid.TryParse(userIdString, out Guid userId))
+                if (userIdString == null)
+                {
+                    return Unauthorized("User is not logged in.");
+                }
+
+                if (!Guid.TryParse(userIdString, out Guid userId))
+                {
+                    return BadRequest("Invalid user ID format.");
+                }
+
+                var userInfo = _userService.UserInfo(userId);
+
+                if (userInfo == null)
+                {
+                    return StatusCode(StatusCodes.Status204NoContent);
+                }
+
+                return Ok(new { userInfo });
+            }
+            catch(Exception ex)
             {
-                return BadRequest("Invalid user ID format.");
+                throw new Exception(ex.Message);
             }
-
-            var userInfo = _userService.UserInfo(userId);
-
-            if(userInfo == null)
-            {
-                return StatusCode(StatusCodes.Status204NoContent);
-            }
-
-            return Ok(new { userInfo });
         }
     }
 }

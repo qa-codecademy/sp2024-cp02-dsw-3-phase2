@@ -16,6 +16,6 @@ namespace ArtShop.Services.Interfaces
         public ArtImage GetImageById(Guid id);
         public List<UserDto> GetUsers();
         public AddImageResultDto AddImage(AddImageDto addimage,Guid userId);
-        public string DeleteImage(Guid id);
+        public DeleteImageResponse DeleteImage(Guid id);
     }
 }

@@ -6,6 +6,7 @@ using ArtShop.Entities.Enums;
 using ArtShop.Mappers.ImageMapper;
 using ArtShop.Mappers.UserMapper;
 using ArtShop.Services.Interfaces;
+using Microsoft.Identity.Client;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -68,9 +69,28 @@ namespace ArtShop.Services.Services
             return new AddImageResultDto { Success = true, Message = "Image Added Succesfuly" };
         }
 
-        public string DeleteImage(Guid id)
+        public DeleteImageResponse DeleteImage(Guid id)
         {
-            throw new NotImplementedException();
+            if(id == null)
+            {
+                throw new Exception("Id cannot be empty");
+            }
+
+            var image = _dbContext.Images.Find(id);
+
+            if(image == null)
+            {
+                throw new Exception("There is no such Image");
+            }
+
+            _dbContext.Images.Remove(image);
+            _dbContext.SaveChanges();
+
+            return new DeleteImageResponse
+            {
+                Success = true,
+                Message = "Image was deleted succesfuly"
+            };
         }
 
         public PaginatedResult<ArtImageDto> GetArtImages(int pageNumber, Category? category, bool? inStock)
@@ -122,7 +142,7 @@ namespace ArtShop.Services.Services
                 throw new Exception("There is no such image");
             }
 
-            return image;
+            return image ;
         }
 
         public List<UserDto> GetUsers()
