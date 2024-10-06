@@ -77,6 +77,7 @@ namespace ArtShop.Api.Controllers
         }
 
         [HttpGet("GetImages")]
+        [AllowAnonymous]
         public IActionResult GetArtImages([FromQuery] int pageNumber = 1, [FromQuery] Category? category = null, [FromQuery] bool? inStock = null)
         {
             try
@@ -92,6 +93,7 @@ namespace ArtShop.Api.Controllers
         }
 
         [HttpGet("GetById{id}")]
+        [AllowAnonymous]
         public IActionResult GetImageById(Guid id)
         {
             try
@@ -110,6 +112,7 @@ namespace ArtShop.Api.Controllers
         }
 
         [HttpGet("users")]
+        [AllowAnonymous]
         public IActionResult GetUsers()
         {
             try
