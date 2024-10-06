@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArtShop.Entities.Entities
+namespace ArtShop.DTO.ArtImageDTOs
 {
     public class PaginatedResult<T>
     {

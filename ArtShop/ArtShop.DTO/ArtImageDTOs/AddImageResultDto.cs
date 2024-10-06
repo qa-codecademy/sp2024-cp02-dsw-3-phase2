@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ArtShop.DTO.ArtImageDTOs
 {
-    public class DisplayImage
+    public class AddImageResultDto
     {
-
+        public bool Success { get; set; }
+        public string Message { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using ArtShop.DTO.ArtImageDTOs;
+using ArtShop.DTO.UserDTOs;
 using ArtShop.Entities.Entities;
 using ArtShop.Entities.Enums;
 using System;
@@ -11,10 +12,10 @@ namespace ArtShop.Services.Interfaces
 {
     public interface IArtImageService
     {
-        public PaginatedResult<ArtImage> GetArtImages(int pageNumber, int pageSize, Category? category, bool? inStock);
-        public ArtImage GetImageById(int id);
-        public List<User> GetUsers();
-        public string AddImage(string filePath);
-        public string DeleteImage(string id);
+        public PaginatedResult<ArtImageDto> GetArtImages(int pageNumber, Category? category, bool? inStock);
+        public ArtImage GetImageById(Guid id);
+        public List<UserDto> GetUsers();
+        public AddImageResultDto AddImage(AddImageDto addimage,Guid userId);
+        public string DeleteImage(Guid id);
     }
 }

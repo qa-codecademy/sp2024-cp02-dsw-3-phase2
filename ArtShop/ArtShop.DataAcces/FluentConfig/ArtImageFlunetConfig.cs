@@ -20,8 +20,7 @@ namespace ArtShop.DataAcces.FluentConfig
                 .HasMaxLength(500);
 
             builder.Property(x => x.Price)
-                .IsRequired()
-                .HasColumnType("decimal(18,2)");
+                .IsRequired();
 
             builder.Property(x => x.Stock)
                 .IsRequired();

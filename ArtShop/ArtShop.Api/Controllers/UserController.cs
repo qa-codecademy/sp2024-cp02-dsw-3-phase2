@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Logging;
+using System.Security.Claims;
 
 namespace ArtShop.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
@@ -21,14 +23,9 @@ namespace ArtShop.Api.Controllers
 
         [HttpPost("register")]
         [AllowAnonymous]
-        //public IActionResult Register(RegisterUserDto user)
-        //{
-        //    return Ok(_userService.Register(user));
-        //}
-
         public IActionResult Register([FromBody] RegisterUserDto registerUser)
         {
-            var result = _userService.Register(registerUser); // Call the service
+            var result = _userService.Register(registerUser);
 
             if (!result.Success)
             {
@@ -40,13 +37,6 @@ namespace ArtShop.Api.Controllers
 
         [HttpPost("login")]
         [AllowAnonymous]
-
-        //public IActionResult Login(LoginUserDto user)
-        //{
-        //    var token = _userService.Login(user);
-        //    return Ok(token);
-        //}
-
         public IActionResult Login([FromBody] LoginUserDto loginUser)
         {
             var result = _userService.Login(loginUser);
@@ -64,7 +54,6 @@ namespace ArtShop.Api.Controllers
         }
 
         [HttpPut("{userName}")]
-        [AllowAnonymous]
         public IActionResult Update(string userName, [FromBody] UpdateUserDto updateUser)
         {
             var result = _userService.Update(userName, updateUser);
@@ -76,12 +65,29 @@ namespace ArtShop.Api.Controllers
 
             return Ok(new { message = result.Message });
         }
+        [HttpGet("userInfo")]
+        public IActionResult UserInfo()
+        {
+            var userIdString = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
+            if (userIdString == null)
+            {
+                return Unauthorized("User is not logged in.");
+            }
 
+            if (!Guid.TryParse(userIdString, out Guid userId))
+            {
+                return BadRequest("Invalid user ID format.");
+            }
 
-        //public IActionResult Update(string userName,UpdateUserDto userDto)
-        //{
-        //        return Ok(_userService.Update(userName,userDto));
-        //}
+            var userInfo = _userService.UserInfo(userId);
+
+            if(userInfo == null)
+            {
+                return StatusCode(StatusCodes.Status204NoContent);
+            }
+
+            return Ok(new { userInfo });
+        }
     }
 }

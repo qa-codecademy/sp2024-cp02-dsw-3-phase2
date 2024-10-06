@@ -13,5 +13,6 @@ namespace ArtShop.Services.Interfaces
         public RegisterUserResultDto Register(RegisterUserDto registerUser);
         public LoginUserResultDto Login(LoginUserDto loginUser);
         public UpdateUserResultDto Update(string userName,UpdateUserDto updateUser);
+        public UserInfoDto UserInfo(Guid id);
     }
 }

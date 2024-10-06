@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArtShop.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfb75cf5fe296e04fec732f7037309df0c0833b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16d85d07fc6ee0445a4067d1f0c580b02b421eeb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArtShop.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArtShop.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

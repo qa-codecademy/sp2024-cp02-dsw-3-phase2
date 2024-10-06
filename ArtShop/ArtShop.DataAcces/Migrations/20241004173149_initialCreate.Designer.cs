@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ArtShop.DataAcces.Migrations
 {
     [DbContext(typeof(ArtShopDbContext))]
-    [Migration("20240926155326_initialCreateImages")]
-    partial class initialCreateImages
+    [Migration("20241004173149_initialCreate")]
+    partial class initialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,11 +27,9 @@ namespace ArtShop.DataAcces.Migrations
 
             modelBuilder.Entity("ArtShop.Entities.Entities.ArtImage", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("BoughtByUserId")
                         .HasColumnType("uniqueidentifier");
@@ -53,8 +51,8 @@ namespace ArtShop.DataAcces.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
 
                     b.Property<Guid?>("SoldByUserId")
                         .HasColumnType("uniqueidentifier");

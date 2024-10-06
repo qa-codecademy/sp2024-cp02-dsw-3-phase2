@@ -18,7 +18,7 @@ namespace ArtShop.DataAcces
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseSqlServer("Server=SPASE\\SQLEXPRESS;Database=ArtShopDb2;Trusted_Connection=true;TrustServerCertificate=true;");
+                optionsBuilder.UseSqlServer("Server=SPASE\\SQLEXPRESS;Database=ArtShop;Trusted_Connection=true;TrustServerCertificate=true;");
         }
 
         public DbSet<ArtImage> Images { get; set; }

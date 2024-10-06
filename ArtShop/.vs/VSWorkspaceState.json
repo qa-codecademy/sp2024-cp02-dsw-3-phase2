@@ -6,7 +6,8 @@
     "\\ArtShop.DataAcces",
     "\\ArtShop.DataAcces\\FluentConfig",
     "\\ArtShop.Services",
-    "\\ArtShop.Services\\Services"
+    "\\ArtShop.Services\\Services",
+    "\\ArtShopUI"
   ],
   "SelectedNode": "\\ArtShop.sln",
   "PreviewInSolutionExplorer": false
