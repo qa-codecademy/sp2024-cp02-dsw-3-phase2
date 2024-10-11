@@ -61,8 +61,6 @@ namespace ArtShop.Services.Services
                 CreatedAt = DateTime.Now.ToString(),
             };
 
-            //uste serializacija vo JSON i zapisuvanje vo Images.json
-
             _dbContext.Images.Add(image);
             _dbContext.SaveChanges();
 
@@ -93,7 +91,14 @@ namespace ArtShop.Services.Services
             };
         }
 
-        public PaginatedResult<ArtImageDto> GetArtImages(int pageNumber, Category? category, bool? inStock)
+        public PaginatedResult<ArtImageDto> GetArtImages(
+            string? username = null,
+            string? searchTerm = null,
+            int pageNumber = 1,
+            Category? category = null,
+            bool? inStock = null,
+            bool sortByPriceAsc = false
+            )
         {
             var query = _dbContext.Images.AsQueryable();
 
@@ -107,12 +112,34 @@ namespace ArtShop.Services.Services
                 query = query.Where(a => a.Stock == inStock.Value);
             }
 
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                searchTerm = searchTerm.ToLower();
+                query = query.Where(a => a.Description.ToLower().Contains(searchTerm));
+            }
+
+            if (!string.IsNullOrEmpty(username))
+            {
+                var usernameTolower = username.ToLower();
+                query = query.Where(a => a.User.UserName == usernameTolower);
+            }
+
+            if (sortByPriceAsc)
+            {
+                query = query.OrderBy(a => a.Price);
+            }
+            else
+            {
+                query = query.OrderByDescending(a => a.Price);
+            }
+
             var totalCount = query.Count();
- 
-            var artImagesDto = query.Skip((pageNumber - 1) * 12)
-                                    .Take(12)
+
+            var artImagesDto = query.Skip((pageNumber - 1) * 15)
+                                    .Take(15)
                                     .Select(a => new ArtImageDto
                                     {
+                                        Id = a.Id,
                                         Description = a.Description,
                                         ImageUrl = a.ImageUrl,
                                         Price = a.Price,
@@ -123,15 +150,17 @@ namespace ArtShop.Services.Services
                                     })
                                     .ToList();
 
+
             return new PaginatedResult<ArtImageDto>
             {
                 Data = artImagesDto,
                 TotalCount = totalCount,
                 PageNumber = pageNumber,
-                PageSize = 12,
-                TotalPages = (int)Math.Ceiling(totalCount / (double)12)
+                PageSize = 15,
+                TotalPages = (int)Math.Ceiling(totalCount / (double)15)
             };
         }
+
 
 
         public ArtImage GetImageById(Guid id)
@@ -148,14 +177,83 @@ namespace ArtShop.Services.Services
         public List<UserDto> GetUsers()
         {
             var usersWithImagesDto = _dbContext.Users
-                                                .Where(x => x.Images != null)
+                                                .Where(x => x.Images.Count >= 1)
                                                 .Select(user => user.ToUserDto())
                                                 .ToList();
+
 
             return new List<UserDto>
             {
                 usersWithImagesDto
             };
         }
+
+
+        public async Task ImportImagesFromJson(Guid userId)
+        {
+            var jsonPath = "C:\\Users\\spase\\source\\repos\\AiArtJson\\images.json";
+
+            var jsonData = await File.ReadAllTextAsync(jsonPath);
+            var artImagesJsonDto = JsonConvert.DeserializeObject<List<ArtImagesJsonDto>>(jsonData);
+
+            var artImages = new List<ArtImage>();
+
+            foreach (var dto in artImagesJsonDto)
+            {
+
+                if (dto.Category == "Art & Designs" || dto.Category == "Black & White" 
+                                                    || dto.Category == "Charcoal & Chalk & Pastel")
+                {
+                    var cleanedCategory = dto.Category.Replace("&", "And");
+
+                    cleanedCategory = cleanedCategory.Replace(" ", "");
+
+                    if (!Enum.TryParse(cleanedCategory, out Category categoryEnum))
+                    {
+                        throw new ArgumentException($"Invalid category: {dto.Category}");
+                    }
+
+                    var artImage = new ArtImage
+                    {
+                        Id = Guid.NewGuid(),
+                        Description = dto.Description,
+                        ImageUrl = dto.ImageUrl,
+                        Category = categoryEnum,
+                        Price = dto.Price,
+                        Stock = true,
+                        UserId = userId,
+                        CreatedAt = DateTime.Now.ToString(),
+                    };
+
+                    artImages.Add(artImage);
+                }
+                else
+                {
+                    if (!Enum.TryParse(dto.Category, out Category categoryEnum))
+                    {
+                        throw new ArgumentException($"Invalid category: {dto.Category}");
+                    }
+
+                    var artImage = new ArtImage
+                    {
+                        Id = Guid.NewGuid(),
+                        Description = dto.Description,
+                        ImageUrl = dto.ImageUrl,
+                        Category = categoryEnum,
+                        Price = dto.Price,
+                        Stock = true,
+                        UserId = userId,
+                        CreatedAt = DateTime.Now.ToString(),
+                    };
+
+                    artImages.Add(artImage);
+                }
+            }
+
+            _dbContext.Images.AddRange(artImages);
+            await _dbContext.SaveChangesAsync();
+
+        }
+
     }
 }

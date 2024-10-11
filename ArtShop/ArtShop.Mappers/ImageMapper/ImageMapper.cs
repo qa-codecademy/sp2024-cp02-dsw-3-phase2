@@ -19,7 +19,6 @@ namespace ArtShop.Mappers.ImageMapper
                 Description = image.Description,
                 Category = image.Category,
                 Price = price,
-                Stock = image.Stock,
                 ImageUrl = image.ImageUrl
             };
 
@@ -31,10 +30,40 @@ namespace ArtShop.Mappers.ImageMapper
                 Description = image.Description,
                 Category = image.Category,
                 Price = image.Price.ToString(),
+                ImageUrl = image.ImageUrl,
+            };
+        }
+
+        public static ArtImageDto ToBoughtImages(this ArtImage image)
+        {
+            return new()
+            {
+                Id = image.Id,
+                Description = image.Description,
+                Category = image.Category.ToString(),
+                Price = image.Price,
                 Stock = image.Stock,
                 ImageUrl = image.ImageUrl,
-                //UserId = image.UserId
+                CreatedAt = image.CreatedAt,
+                UserId = image.UserId
             };
+
+        }
+
+        public static ArtImageDto ToUserInfoImages(this ArtImage image)
+        {
+            return new()
+            {
+                Id = image.Id,
+                Description = image.Description,
+                Category = image.Category.ToString(),
+                Price = image.Price,
+                Stock = image.Stock,
+                ImageUrl = image.ImageUrl,
+                CreatedAt = image.CreatedAt,
+                UserId = image.UserId
+            };
+
         }
     }
 }

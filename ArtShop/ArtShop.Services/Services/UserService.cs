@@ -12,6 +12,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using XSystem.Security.Cryptography;
+using ArtShop.Mappers.ImageMapper;
 
 namespace ArtShop.Services.Services
 {
@@ -189,6 +190,16 @@ namespace ArtShop.Services.Services
 
             var user = _dbContext.Users.FirstOrDefault(x => x.Id == id);
 
+            var boughtImages = _dbContext.Images
+                                         .Where(x => x.BoughtByUserId == id)
+                                         .Select(image => ImageMapper.ToUserInfoImages(image))
+                                         .ToList();
+
+            var soldImages = _dbContext.Images
+                                        .Where(x => x.SoldByUserId == id)
+                                        .Select(image => ImageMapper.ToUserInfoImages(image))
+                                        .ToList();
+
             if (user == null)
             {
                 throw new Exception("User Not Found");
@@ -202,6 +213,8 @@ namespace ArtShop.Services.Services
                 UserName = user.UserName,
                 CardNo = user.CardNo,
                 ExpireDate = user.ExpireDate,
+                BoughtImages = boughtImages,
+                SoldImages = soldImages
             };
         }
 

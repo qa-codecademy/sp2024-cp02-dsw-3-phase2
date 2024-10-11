@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArtShop.Mappers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6369fee1654746a386f88023db6460d9356ea94")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a2d562205d2f35cff930772fd274186950ece4d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArtShop.Mappers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArtShop.Mappers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

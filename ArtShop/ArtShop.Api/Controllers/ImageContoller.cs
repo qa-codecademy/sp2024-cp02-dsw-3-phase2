@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using XAct;
 using XAct.Messages;
 
 namespace ArtShop.Api.Controllers
@@ -78,11 +79,11 @@ namespace ArtShop.Api.Controllers
 
         [HttpGet("GetImages")]
         [AllowAnonymous]
-        public IActionResult GetArtImages([FromQuery] int pageNumber = 1, [FromQuery] Category? category = null, [FromQuery] bool? inStock = null)
+        public IActionResult GetArtImages([FromQuery]string username = null,[FromQuery] string searchTerm = null, [FromQuery] bool sortByPriceAsc = false,[FromQuery] int pageNumber = 1, [FromQuery] Category? category = null, [FromQuery] bool? inStock = null)
         {
             try
             {
-                var paginatedImages = _artImageService.GetArtImages(pageNumber, category, inStock);
+                var paginatedImages = _artImageService.GetArtImages(username,searchTerm,pageNumber, category, inStock,sortByPriceAsc);
                 return Ok(new{ paginatedImages});
             }
             catch (Exception ex)
@@ -125,6 +126,33 @@ namespace ArtShop.Api.Controllers
                 throw new Exception(ex.Message);
             }
 
+        }
+
+
+        [HttpPost("import")]
+        public async Task<IActionResult> ImportImagesFromJson()
+        {
+            try
+            {
+                var userIdString = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+                if (userIdString == null)
+                {
+                    return Unauthorized("User is not logged in.");
+                }
+
+                if (!Guid.TryParse(userIdString, out Guid userId))
+                {
+                    return BadRequest("Invalid user ID format.");
+                }
+
+                await _artImageService.ImportImagesFromJson(userId);
+                return Ok("Images imported successfully for the user.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
     }
 }

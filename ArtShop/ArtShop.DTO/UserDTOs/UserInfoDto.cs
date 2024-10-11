@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ArtShop.DTO.ArtImageDTOs;
+using ArtShop.Entities.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +16,8 @@ namespace ArtShop.DTO.UserDTOs
         public string Email { get; set; }
         public string CardNo { get; set; }
         public string ExpireDate { get; set; }
+        public List<ArtImageDto> BoughtImages { get; set; }
+        public List<ArtImageDto> SoldImages { get; set; }
+
     }
 }

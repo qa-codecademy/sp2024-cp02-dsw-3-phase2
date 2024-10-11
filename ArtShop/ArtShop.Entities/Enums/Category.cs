@@ -14,8 +14,9 @@ namespace ArtShop.Entities.Enums
         AstroPhotography,
         Canvas,
         Landscapes,
-        CharcoalChalkPastel,
-        ArtAndDesign,
-        Abstract
+        CharcoalAndChalkAndPastel,
+        ArtAndDesigns,
+        Abstract,
+        Astrophoto
     }
 }

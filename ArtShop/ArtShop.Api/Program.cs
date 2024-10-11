@@ -34,6 +34,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IArtImageService, ArtImageService>();
+builder.Services.AddTransient<ICartService, CartService>();
 
 builder.Services.AddAuthentication(x =>
 {
