@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ArtShop.DTO\ArtShop.DTO.csproj" />
+    <ProjectReference Include="..\ArtShop.Entities\ArtShop.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
