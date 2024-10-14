@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2D0A60B3-E68F-4B5A-8ED6-2F3CBB2FBA23}|ArtShop.Services\\ArtShop.Services.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D0A60B3-E68F-4B5A-8ED6-2F3CBB2FBA23}|ArtShop.Services\\ArtShop.Services.csproj|solutionrelative:artshop.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D4C0FB2-44B8-4947-87D4-991A42381FD0}|ArtShop.Entities\\ArtShop.Entities.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.entities\\enums\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D4C0FB2-44B8-4947-87D4-991A42381FD0}|ArtShop.Entities\\ArtShop.Entities.csproj|solutionrelative:artshop.entities\\enums\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{2D0A60B3-E68F-4B5A-8ED6-2F3CBB2FBA23}|ArtShop.Services\\ArtShop.Services.csproj|solutionrelative:artshop.services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D0A60B3-E68F-4B5A-8ED6-2F3CBB2FBA23}|ArtShop.Services\\ArtShop.Services.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D0A60B3-E68F-4B5A-8ED6-2F3CBB2FBA23}|ArtShop.Services\\ArtShop.Services.csproj|solutionrelative:artshop.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DB141D7F-E9C7-4274-9539-77A32B155FE1}|ArtShop.Api\\ArtShop.Api.csproj|c:\\users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\artshop\\artshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB141D7F-E9C7-4274-9539-77A32B155FE1}|ArtShop.Api\\ArtShop.Api.csproj|solutionrelative:artshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 234,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -89,6 +89,10 @@
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "UserInfoDto.cs",
@@ -102,19 +106,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "ArtShop.Services\\Services\\UserService.cs",
               "ToolTip": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Services\\UserService.cs",
               "RelativeToolTip": "ArtShop.Services\\Services\\UserService.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAANoAAAAIAAAA",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwBEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T16:23:20.091Z"
+              "WhenOpened": "2024-10-10T16:23:20.091Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ArtImageDto.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.DTO\\ArtImageDTOs\\ArtImageDto.cs",
               "RelativeDocumentMoniker": "ArtShop.DTO\\ArtImageDTOs\\ArtImageDto.cs",
@@ -122,12 +127,11 @@
               "RelativeToolTip": "ArtShop.DTO\\ArtImageDTOs\\ArtImageDto.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T15:59:59.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T15:59:59.741Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Entities\\Enums\\Category.cs",
               "RelativeDocumentMoniker": "ArtShop.Entities\\Enums\\Category.cs",
@@ -135,8 +139,7 @@
               "RelativeToolTip": "ArtShop.Entities\\Enums\\Category.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T17:34:03.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T17:34:03.032Z"
             },
             {
               "$type": "Document",
@@ -152,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IArtImageService.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Interfaces\\IArtImageService.cs",
               "RelativeDocumentMoniker": "ArtShop.Services\\Interfaces\\IArtImageService.cs",
@@ -160,8 +163,7 @@
               "RelativeToolTip": "ArtShop.Services\\Interfaces\\IArtImageService.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAqwBAAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:33:08.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T14:33:08.765Z"
             },
             {
               "$type": "Document",
@@ -189,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Api\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "ArtShop.Api\\Controllers\\CartController.cs",
@@ -201,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "ArtShop.Services\\Interfaces\\IUserService.cs",
@@ -213,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ImageMapper.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Mappers\\ImageMapper\\ImageMapper.cs",
               "RelativeDocumentMoniker": "ArtShop.Mappers\\ImageMapper\\ImageMapper.cs",
@@ -237,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ArtImageService.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Services\\Services\\ArtImageService.cs",
               "RelativeDocumentMoniker": "ArtShop.Services\\Services\\ArtImageService.cs",
@@ -245,12 +247,11 @@
               "RelativeToolTip": "ArtShop.Services\\Services\\ArtImageService.cs",
               "ViewState": "AQIAAFMAAAAAAAAAAAAAAF0AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T08:01:57.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T08:01:57.63Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "ArtShop.Api\\Controllers\\UserController.cs",
@@ -258,12 +259,11 @@
               "RelativeToolTip": "ArtShop.Api\\Controllers\\UserController.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAqwHcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T08:01:11.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T08:01:11.03Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ImageContoller.cs",
               "DocumentMoniker": "C:\\Users\\spase\\source\\repos\\sp2024-cp02-dsw-3-phase2\\ArtShop\\ArtShop.Api\\Controllers\\ImageContoller.cs",
               "RelativeDocumentMoniker": "ArtShop.Api\\Controllers\\ImageContoller.cs",
@@ -271,8 +271,7 @@
               "RelativeToolTip": "ArtShop.Api\\Controllers\\ImageContoller.cs",
               "ViewState": "AQIAAE0AAAAAAAAAAAAAAFcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T12:10:34.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-29T12:10:34.509Z"
             }
           ]
         }
