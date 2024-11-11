@@ -29,12 +29,18 @@
           "ArtShop.Entities": "1.0.0"
         },
         "runtime": {
-          "ArtShop.DTO.dll": {}
+          "ArtShop.DTO.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ArtShop.Entities/1.0.0": {
         "runtime": {
-          "ArtShop.Entities.dll": {}
+          "ArtShop.Entities.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

@@ -9,8 +9,6 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddDbContext<ArtShopDbContext>(x =>
 {
     x.UseSqlServer(builder.Configuration.GetConnectionString("ArtShopDbContext"));
@@ -20,7 +18,7 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.AllowAnyOrigin() // Allow all origins for development
+        policy.AllowAnyOrigin()
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -28,7 +26,6 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddHttpClient();
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -56,7 +53,7 @@ builder.Services.AddAuthentication(x =>
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Movies", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "AiArt", Version = "v1" });
 
     var securityScheme = new OpenApiSecurityScheme()
     {
@@ -88,7 +85,6 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

@@ -29,9 +29,6 @@ namespace ArtShop.Mappers.UserMapper
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 UserName = user.UserName,
-                //Email = user.Email,
-                //CardNo = user.CardNo,
-                //ExpireDate = user.ExpireDate
             };
         }
     }

@@ -12,8 +12,6 @@ namespace ArtShop.DTO.ArtImageDTOs
         public string Description { get; set; }
         public Category Category { get; set; }
         public string Price { get; set; }
-        //public bool Stock { get; set; } = true;
         public string ImageUrl { get; set; }
-        //public Guid UserId { get; set; }
     }
 }
